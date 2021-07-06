@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>채팅 앱</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+    <div class="wrapper">
+        <div class="user_container">
+            <label for="nickname">대화명</label>
+            <input type="text" id="nickname">
+        </div>
+        <div class="display_container">
+            <ul class="chatting_list">
+                
+            </ul>
+        </div>
+        <div class="input_container">
+            <span>
+                <input type="text" class="chatting_input">
+                <button class="send_button">전송</button>
+            </span>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chat.js"></script>
 </body>
 
 </html>
